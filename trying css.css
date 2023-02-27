@@ -1,0 +1,208 @@
+
+
+/* Style for the body */
+body {
+  font-family: Arial, sans-serif;
+  background: white;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Style for the header */
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+  font-size: 64px;
+  color: blue;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 8px;
+  text-shadow: 2px 2px 4px #999;
+
+}
+
+.container {
+  border: 2px dashed blue;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+  margin-top: 30px;
+  text-align: center;
+  border-bottom: 2px solid blue;
+  padding-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+li {
+  margin-bottom: 10px;
+  text-align: center;
+  color: blue;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* Style for the form */
+form {
+  margin-top: 30px;
+  border: 2px solid blue;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: blue;
+}
+
+input[type="number"] {
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+button[type="submit"] {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}
+body {
+  text-align: center;
+}
+
+.container p:nth-child(1),
+.container p:nth-child(2) {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-underline: blue;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 200px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.calculator-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.calculator-label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.calculator-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.calculator-button:hover {
+  background-color: #0062cc;
+}
+
+.calculator-result {
+  font-size: 24px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.trucks-heading {
+  border: 1px solid blue;
+  padding: 5px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}

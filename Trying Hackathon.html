@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>FabuLorry Delivery System</title>
+   <script src="delivery_info.js"></script>
+   <link href="trying%20css.css" rel="stylesheet" />
+   <img src="FABULORRY.png" alt="My Image" height=" 600" width="1000" style="display: block; margin: 0 auto;">
+
+</head>
+
+
+<body>
+   <h1>Welcome to FabuLorry Delivery System!</h1>
+   <p>This system computes the most efficient and cost-effective way to deliver our cabinetry!</p>
+   <div class="container">
+      <h2>Today's Costs</h2>
+      <p>Current NJ gas price: $4.366 per gallon.</p>
+      <p>Drivers Hourly Pay: $29 per hour.</p>
+      <h2>Package Sizings Listed Below:</h2>
+      <ul>
+         <li>Small package - 2 units (13 inches)</li>
+         <li>Medium package - 4 units (20 inches)</li>
+         <li>Large package - 8 units (28 inches)</li>
+         <li>Max capacity- 32 units</li>
+      </ul>
+   </div>
+
+   <section id="location">
+         <h3>Location</h3>
+         <p>We ship cabinetry across NJ and NY. Please select your location:</p>
+         <form>
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+               <option value="new york">New York</option>
+               <option value="new jersey">New Jersey</option>
+            </select>
+            <br>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+            <br>
+            <label for="zipcode">Zip Code:</label>
+            <input type="text" id="zipcode" name="zipcode" required>
+            <br>
+            <label for="street">Street:</label>
+            <input type="text" id="street" name="street" required>
+            <br>
+            <input type="submit" value="Calculate Shipping Cost">
+
+         </form>
+      </section>
+   <h2>Please enter the required information below:</h2>
+   <form id="delivery-form">
+      <label for="small-packages">How many small packages are you delivering?</label>
+      <input type="number" id="small-packages" name="small-packages" min="0" max="16"><br>
+      <label for="medium-packages">How many medium packages are you delivering?</label>
+      <input type="number" id="medium-packages" name="medium-packages" min="0" max="8"><br>
+      <label for="large-packages">How many large packages are you delivering?</label>
+      <input type="number" id="large-packages" name="large-packages" min="0" max="4"><br>
+      <button type="submit">Submit</button>
+   </form>
+      <h5>Trucks</h5>
+         <label>
+  <input type="radio" name="truck" value="gas">
+  Gas Truck
+</label>
+
+<label>
+  <input type="radio" name="truck" value="ev">
+  EV Truck
+</label>
+   <article>
+      <h4>Traffic Calculator</h4>
+
+   <label for="distance">Distance (in miles):</label>
+   <input type="text" id="distance" name="distance">
+
+   <button onclick="calculateTraffic()">Calculate</button>
+
+   <p id="result"></p>
+
+   <script>
+      function calculateTraffic() {
+         const distance = parseFloat(document.getElementById('distance').value);
+         let message;
+
+         if (distance <1) {
+            message = "You should leave at 5pm to avoid traffic.";
+         } else if (distance < 10) {
+            message = "You should leave at 3pm to avoid traffic.";
+         }  else if (distance < 30) {
+            message = "You should leave at 1pm to avoid traffic.";
+         } else if (distance < 50) {
+            message = "You should leave at 11am to avoid traffic.";
+         } else if (distance >=50) {
+            message = "You should leave at 9am to avoid traffic.";
+         }
+
+
+         document.getElementById('result').textContent = message;
+      }
+
+   </script>
+
+
+   </article>
+   <h2>Expense of Deliveries</h2>
+   <form id="calculation-form">
+      <label for="driving-time">What time did your truck leave to start your delivery route?</label>
+      <input type="time" id="departure-time" name="departure-time" min="00:00" max="23:59" required><br>
+      <label for="driving-time">How long did your route take you in hours?</label>
+      <input type="number" id="driving-time" name="driving-time" min="0" step=".5"><br>
+      <label for="distance">How many miles did you travel?</label>
+      <input type="number" id="distance" name="distance" min="0" step="0.1"><br>
+      <button type="submit">Calculate</button>
+   </form>
+   <h2>Total Expense of Deliveries</h2>
+   <p id="total-expense"></p>
+
+   <script>
+      const gas_price = 4.366;
+      const drivers_salary_hr = 29;
+      const tot_cost_all_trucks = 0;
+      const tot_trucks = 1;
+      const max_capacity = 32;
+      const small_pack_size = 2;
+      const med_pack_size = 4;
+      const large_pack_size = 8;
+   </script>
+
+
+
+
+</body>
+</html>
